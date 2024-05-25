@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <style>
+        @keyframes changeimg{
+            20%{background-image: url("https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960");}
+            50%{background-image: url("https://cdn.motor1.com/images/mgl/NGGZon/s3/koenigsegg-gemera.jpg");}
+            90%{background-image: url("https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/rolls_royce_phantom_top_10.jpg?itok=XjL9f1tx");}
+        }
+        .socialmedia{
+            width: 30px;
+            height: 30px;
+
+        }
+        #footerdiv{
+            display: flex;
+            margin-left: 50px;
+        }
+        .teamphoto{
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 50% 50% 0% 0%;
+        }
+        #headdiv{
+            display: flex;
+        }
+        nav{
+            margin-left: 900px;
+        }
+        #logoimg{
+            height: 30px;
+            width: 30px;
+            border: 2px solid brown;
+            border-radius: 50%;
+        }
+        label{
+            margin-left: 20px;
+            font-size: larger;
+            font-family: "Knewave", system-ui;
+
+        }
+        header{
+            background-color: #e4bef7;
+        }
+        h1{
+            font-family: "Jacquard 12", system-ui;
+            text-align: center;
+            color: #7e37a1;
+        }
+        a:hover{
+            background-color: red;
+            color: blue;
+        }
+        #homediv{
+
+            background-image: url("https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960");
+            height: 600px;
+            width: 1500px;
+            animation-name: changeimg;
+            animation-duration: 10s;
+            animation-delay: 5s;
+        }
+        legend{
+            text-align: center;
+        }
+        textarea{
+            margin-left: 200px;
+            position: relative;
+            width: 200px;
+        }
+        .inputform{
+            margin-left: 220px;
+            position: relative;
+            width: 200px;
+        }
+        span{
+            margin-left: 800px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="headdiv">
+        <img src="https://i.pinimg.com/originals/2b/de/7d/2bde7d14133968f97d6c4dd898edb989.gif" id="logoimg"> 
+        <label>BUY CARS</label>
+        <nav>
+            <a href="#home"> Home </a>
+            <a href="#team"> Our Team </a>
+            <a href="#contact"> Contactus </a>
+            <a href="#cart">Cart</a>
+            <a href="#Orders">Orders   </a>
+        </nav>
+    </div>
+    </header>
+    <section id="home">
+        <h1> Beauty Of Cars</h1>
+        <div id="homediv">
+        </div>
+    </section>
+    <section id="team">
+        <table>
+            <tr>
+                <td><img src= "https://media.ed.edmunds-media.com/non-make/fe/fe_40122_500.jpg" class= "teamphoto"></td>
+                <td><img src= "https://media.istockphoto.com/id/1408201450/photo/happy-car-salesperson-using-digital-tablet-in-a-showroom.jpg?s=612x612&w=0&k=20&c=P4P0pfH_D4GXQNhndRlNyFMdtIXUVBVh6C5-tVYWBHg=" class= "teamphoto"></td>
+                <td><img src= "https://www.shutterstock.com/image-photo/happy-friendly-woman-customer-female-600nw-2246142789.jpg" class= "teamphoto"> </td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, ipsa hic voluptate exercitationem porro dignissimos quasi? Sed tenetur itaque accusamus impedit veniam. A voluptatem natus, doloremque magnam voluptatum dolorum ad.</td>
+                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo error deleniti aspernatur officiis, magnam voluptates in adipisci labore sunt? Consequuntur eius laborum, tenetur eum assumenda veniam a explicabo nam quidem.</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deleniti error aut repudiandae minus qui amet autem distinctio consequuntur, dolorem delectus ratione officia illum quo animi accusantium odit dicta eos. </td>
+            </tr>
+            
+        </table>
+    </section>
+    <section id="contact">
+            <form>
+            <fieldset>
+                <legend> Contact Us </legend>
+            <label for="name">Name:</label>
+            <input type="text" class="inputform"  required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" class="inputform"  required>
+            <br>
+            <br>
+            <label for="email">Phone:</label>
+            <input type="number"class="inputform" maxlength="10" required>
+            <br>
+            <br>
+            <label for="message">Message:</label>
+
+            <textarea cols="30" rows="10" required></textarea>
+            <br>
+            <button type="submit">Send Message</button>
+        </fieldset>
+        </form>
+    </section>
+    <footer>
+        <div id ="footerdiv">
+    Developed By 
+    <b>@AnkitKumar </b>
+    <span>
+    <a href ="https://www.facebook.com">
+        <img src="https://th.bing.com/th/id/OIP.55DCXbXlKDgEBoZhKxpzLAHaHa?w=187&h=187&c=7&r=0&o=5&pid=1.7"  class = "socialmedia" alt="">
+    </a>
+    <a href ="https://www.instagram.com">
+        <img src="https://th.bing.com/th/id/OIP.XgT9d552B6R9C60Ul2yqkAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7"  class = "socialmedia" alt="">
+    </a>
+    <a href ="https://www.twitter.com">
+        <img src="https://th.bing.com/th/id/OIP.-2yiSRFxDGzINV5OGldPwgHaFH?w=223&h=180&c=7&r=0&o=5&pid=1.7"  class = "socialmedia" alt="">
+    </a>
+</span>
+</div>
+    </footer>
+</body>
+</html>
